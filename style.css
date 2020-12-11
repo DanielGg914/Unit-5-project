@@ -1,5 +1,15 @@
 
+:root{
+    --gold: #ffd700;
+    --purple: #800080;
+    --black: #000;
+    --white: #FFF;
+}
 
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+}
 
 body{
     background-color: var(--purple);
@@ -79,4 +89,12 @@ h1{
 
 .loginbox a:hover{
     color: #F0BD58;
+}
+
+.logo{
+    float: left;
+    margin-left: 250px;
+  width: 100px;
+  height: 100px;
+  background: #555;
 }

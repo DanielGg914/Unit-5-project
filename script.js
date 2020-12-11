@@ -1,13 +1,13 @@
-const loginForm = document.getElementById("login-form");
-const loginButton = document.getElementById("login-form-submit");
-const loginErrorMsg = document.getElementById("login-error-msg");
+const loginForm = document.getElementsByClassName("loginbox");
+const loginButton = document.getElementsByClassName("submit");
+
 
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "user" && password === "web_dev") {
+    if (username === "1" && password === "2") {
         alert("You have successfully logged in.");
         location.reload();
     } else {
