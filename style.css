@@ -1,4 +1,15 @@
 
+:root{
+    --gold: #ffd700;
+    --purple: #800080;
+    --black: #000;
+    --white: #FFF;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+}
 
 h3{
     text-align: center;
@@ -22,7 +33,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: var(--purple);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -31,7 +42,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: var(--gold);
 }
 
 .container {
