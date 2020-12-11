@@ -6,26 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login In </title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 <body>
     <img class="logo" src="testlogo.png">
     
-    <div class="loginbox">
+
+    <div id="error"></div>
+
+    <div class="loginbox" action="/" method="GET">
         <img src="avatar3.png" class="avatar">
         <h1>Login Here</h1>
+        <div>
+            <p for="username">Username</p>
+            <input  id="username" type="text" name="username" placeholder="Enter Username">
+        </div>
 
-        <form>
-            <p>Username</p>
-            <input type="text" name="" placeholder="Enter Username">
-            <p>Password</p>
-            <input type="password" name="" placeholder="Enter Password">
-            <input class="submit" type="submit" name="" value="Login">
-            
-        </form>
+        <div>
+            <p for="password">Password</p>
+            <input id="password" type="password" name="password" placeholder="Enter Password">
+        </div>
+            <input  type="submit"  value="Login">
+
+
     </div>
-    
+
 </body>
-
 </html>
-

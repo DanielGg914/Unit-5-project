@@ -1,4 +1,3 @@
-
 :root{
     --gold: #ffd700;
     --purple: #800080;
@@ -77,6 +76,8 @@ h1{
     color: #fff;
     font-size: 18px;
     border-radius: 20px;
+  
+    
 }
 
 .loginbox input[type="submit"]:hover{
@@ -98,3 +99,4 @@ h1{
   height: 100px;
   background: #555;
 }
+
