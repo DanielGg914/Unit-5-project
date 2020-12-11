@@ -23,3 +23,95 @@ body{
     background-size: cover; */
 }
 
+/* Nav Bar Styles */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--purple);
+    height: 50px;
+    position: fixed;
+    width: 100%;
+}
+
+nav a{
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Header */
+
+header{
+    padding-top: 50px;
+    border-bottom: 1px var(--black) solid;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+header img{
+    width: 125px;
+    height: 100px;
+}
+
+header h1{
+    font-size: 100px;
+    margin-left: 200px;
+}
+
+/* Option styles */
+
+main{
+    display: flex;
+    margin: 0 10%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    justify-items: center;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.option h3{
+    font-size: 20px;
+    font-family: cursive;
+    color: var(--gold);
+}
+
+.option p{
+    font-size: 15px;
+    font-family: fantasy;
+}
+
+.included{
+    border-top: 5px var(--black) solid;
+    width: 100%;
+}
+
+.border1{
+    border-right: 3px var(--black) solid;
+}
+
+.border2{
+    border-left: 3px var(--black) solid;
+}
+
+ul{
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
