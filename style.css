@@ -109,3 +109,16 @@ li {
     font-size: 1.4rem;
     line-height: 1.5;
 }
+
+p,
+input,
+li {
+    /* Default text styles */
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+footer {
+    background-color: #bc2dff;
+    color: white;
+    padding: .3%;
+}
