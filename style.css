@@ -138,8 +138,10 @@ li {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-footer {
+footer p {
     background-color: #bc2dff;
     color: white;
-    padding: .3%;
+    padding: 15px;
+    margin-top: 5px;
+    font-size: 15px;
 }
