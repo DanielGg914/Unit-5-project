@@ -51,3 +51,55 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
+nav,
+aside {
+    background-color: whitesmoke;
+    padding: 0.8%;
+}
+
+nav {
+    height: 50px;
+    background-color: #bc2dff;
+    display: flex;
+    margin-bottom: 10px;
+    box-shadow: 2px .5px 8px black;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+    flex: 2;
+    display: flex;
+}
+
+nav li {
+    /* Centered the list items */
+    display: inline;
+    text-align: center;
+    flex: 1;
+}
+
+nav img {
+    margin-top: 0px;
+}
+
+nav a {
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFD700;
+}
+
+nav form {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    height: 100%;
+    padding: 0 2em;
+}
+
+input {
+    font-size: 1.6rem;
+    height: 26px;
+}
