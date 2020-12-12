@@ -11,9 +11,9 @@
     padding: 0;
 }
 
-h3{
+h1{
     text-align: center;
-    font-size: 28px;
+    font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
 
 }
@@ -65,6 +65,10 @@ nav {
     box-shadow: 2px .5px 8px black;
 }
 
+li:hover{
+    color: var(--gold);
+}
+
 nav ul {
     padding: 0;
     list-style: none;
@@ -99,10 +103,7 @@ nav form {
     padding: 0 2em;
 }
 
-input {
-    font-size: 1.6rem;
-    height: 26px;
-}
+
 
 p,
 li {
