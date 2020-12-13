@@ -93,22 +93,16 @@ nav  {
 
 
 
-li:hover{
-    color: var(--gold);
+a:hover{
+    color: var(--purple);
 }
 
-nav ul {
-    padding: 0;
-    list-style: none;
-    flex: 2;
-    display: flex;
-}
-
-nav li {
-    /* Centered the list items */
+nav a{
     display: inline;
     text-align: center;
     flex: 1;
+    color: var(--gold);
+    text-decoration: none;
 }
 
 nav img {
@@ -128,14 +122,14 @@ nav form {
 
 
 p,
-li {
+a {
     font-size: 1.4rem;
     line-height: 1.5;
 }
 
 p,
 input,
-li {
+a {
     /* Default text styles */
     font-family: 'Open Sans Condensed', sans-serif;
 }
