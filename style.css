@@ -1,102 +1,195 @@
-:root{
+:root {
     --gold: #ffd700;
     --purple: #800080;
     --black: #000;
     --white: #FFF;
+    --red: #330000;
 }
 
-*, *::before, *::after{
+*, *::before, *::after {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background-color: var(--purple);
+html {
+    /* Background Color for the page */
+    background-color: var(--red);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    font-family: sans-serif;
-}
-.loginbox{
-    width: 320px;
-    height: 350px;
-    background: #000;
-    color: #fff;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    box-sizing: border-box;
-    padding: 70px 30px;
-}
-.avatar{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: calc(50% - 50px);
-}
-h1{
-    margin: 0;
-    padding: 0 0 20px;
-    text-align: center;
-    font-size: 22px;
-}
-.loginbox p{
-    margin: 0;
-    padding: 0;
-    font-weight: bold;
+
+    /* background-color: var(--red);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23aa11aa'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover; */
 }
 
-.loginbox input{
+/* Typography */
+
+h1, h1, h3, h4, h5, h6 {
+    /* Default header styles */
+    font-family: 'Sonsie One', cursive;
+    color: var(--black)
+}
+
+p, input, li {
+    /* Default text styles */
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p, li {
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+@media(max-width: 480px){
+    p, li {
+        font-size: 10px;
+    }
+}
+
+/* Nav Bar Styles */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--purple);
+    height: 50px;
+    position: fixed;
     width: 100%;
-    margin-bottom: 20px;
 }
 
-.loginbox input[type="text"], input[type="password"]{
-    border: none;
-    border-bottom: 1px solid #fff;
-    background: transparent;
-    outline: none;
-    height: 40px;
-    color: #fff;
-    font-size: 16px;
+nav a {
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.loginbox input[type="submit"]{
-    border: none;
-    outline: none;
-    height: 40px;
-    background: #B682D9;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
-  
+/* Header */
+
+header {
+    padding-top: 50px;
+    border-bottom: 1px var(--black) solid;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: flex-start;
+}
+
+header img {
+    width: 125px;
+    height: 100px;
+}
+
+header h1 {
+    font-size: 100px;
+    margin: 0 auto;
+}
+
+@media(max-width: 480px){
+    header h1 {
+        font-size: 50px;
+    }
+
+    header img {
+        width: 75px;
+        height: 50px;
+    }
+}
+
+/* Footer Layout */
+
+footer {
+    background-color: var(--purple);
+    color: var(--gold);
+    padding: 10px 0;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+}
+
+div.page-content {
+    min-height: calc(100vh - 100px);
+}
+
+@media(max-width: 480px){
+    div.page-content {
+        min-height: calc(100vh - 85px);
+    }
+}
+
+/* Option styles */
+
+main{
+    display: flex;
+    margin: 0 10%;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 100%;
+    justify-items: center;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+}
+
+.option h3{
+    font-size: 20px;
+    color: var(--gold);
+}
+
+.included{
+    border-top: 5px var(--gold) solid;
+    width: 100%;
+}
+
+.border1{
+    border-right: 3px var(--gold) solid;
+}
+
+.border2{
+    border-left: 3px var(--gold) solid;
+}
+
+ul{
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    background-color: var(--red);
+    color: var(--gold);
+}
+
+
+@media(max-width: 480px){
+    .option h3{
+        font-size: 15px;
+    }
     
+    .included{
+        border-top: 2.5px var(--gold) solid;
+    }
+    
+    .border1{
+        border-right: 1.5px var(--gold) solid;
+    }
+    
+    .border2{
+        border-left: 1.5px var(--gold) solid;
+    }
+    
+    ul{
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
 }
-
-.loginbox input[type="submit"]:hover{
-    cursor: pointer;
-    background: #F0BD58;
-    color: #000;
-}
-
-
-
-.loginbox a:hover{
-    color: #F0BD58;
-}
-
-.logo{
-    float: left;
-    margin-left: 250px;
-  width: 100px;
-  height: 100px;
-  background: #555;
-}
-
