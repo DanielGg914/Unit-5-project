@@ -138,6 +138,7 @@ nav  {
     margin-bottom: 10px;
     box-shadow: 2px .5px 8px black;
     text-align: center;
+    
    
 }
 
@@ -153,6 +154,8 @@ nav a{
     flex: 1;
     color: var(--gold);
     text-decoration: none;
+    font-size: 18px;
+    margin: 5px;
 }
 
 nav a:hover{
