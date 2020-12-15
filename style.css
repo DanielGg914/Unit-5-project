@@ -146,3 +146,26 @@ div .bottomimageblock {
     background-color: black;
     padding: 100px;
 }
+
+/* article styles */
+
+article p{
+    background-color: var(--red);
+    padding: 10px;
+}
+
+article h3 {
+    margin: 0 auto;
+    font-size: 25px;
+    border-bottom: 1.5px solid var(--gold);
+    color: var(--black);
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+article {
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    color: var(--gold);
+}
