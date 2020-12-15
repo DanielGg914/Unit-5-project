@@ -113,14 +113,17 @@ footer {
 }
 
 div.page-content {
+    height: fit-content;
     min-height: calc(100vh - 100px);
 }
 
 @media(max-width: 480px){
     div.page-content {
+        height: fit-content;
         min-height: calc(100vh - 85px);
     }
 }
+
 
 /* Option styles */
 
