@@ -1,8 +1,8 @@
 
 var objPeople = [
     {
-        username: "security",
-        password: "Messi1011"
+        username: "odisha",
+        password: "westmec1506"
     }
    
 ]
@@ -13,9 +13,9 @@ function getInfo() {
 
     for(i = 0; i < objPeople.length; i++){
         if(username == objPeople[i].username && password == objPeople[i].password){
-            console.log(username + " is logged in!!!")
+            window.open('hiring.html')
             return
         } 
     }
-    console.log("incorrect username or password")
+    alert("Incorrect Username or Password")
 }
