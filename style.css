@@ -28,7 +28,7 @@ html {
 
 h1, h1, h3, h4, h5, h6 {
     /* Default header styles */
-    font-family: 'Sonsie One', cursive;
+    font-family: 'Trebuchet MS', sans-serif;
     color: var(--black)
 }
 
@@ -101,6 +101,9 @@ header h1 {
     }
 }
 
+/* Body styles */
+
+
 /* Footer Layout */
 
 footer {
@@ -134,8 +137,8 @@ main {
 }
 
 main img {
-    height: 330px;
-    width: 900px;
+    height: 430px;
+    width: 1000px;
     margin: 0 auto;
 }
 
