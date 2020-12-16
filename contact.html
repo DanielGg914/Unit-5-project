@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
-    <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+  <link rel="stylesheet" href="contact.css">
 </head>
+
 <body>
-    
-    <nav >
-        <a href="#">Home</a>
-        <a href="#">Order</a>
-        <a href="#">Hiring</a>
-        <a href="#">Contacts</a>
-    </nav>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Order</a>
+    <a href="#">Hiring</a>
+    <a href="#">Contacts</a>
+  </nav>
 
-    <h1 >Contacts</h1>
-    
-<article>
-<div class="container" >
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <div class="page-content">
+    <header>
+      <img src="images/Test.png">
+      <h1>Contacts</h1>
+    </header>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <article>
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="usa">USA</option>
-      <option value="canada">Canada</option>
-      <option value="australia">Australia</option>
-    </select>
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+          </select>
 
-
-    <label for="message">Message</label>
-    <textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
-
-<aside class="sidebar">
-  
-    <button style="width: 80px;">
-        <a href="https://www.youtube.com/c/MrBeast6000">
-          <img src="facebookicon.png" alt="" style="width: 40px; ">
-        </a>
-        <p class="facebook" style="color: #0785F2;">Facebook</p>
-    </button>
-
-    <button style="width: 80px;">
-        <a href="https://www.youtube.com/c/MrBeast6000">
-          <img src="instagramicon.png" alt="" style="width: 40px; ">
-        </a>
-        <p style="color:  #F24968;">Instagram</p>
-    </button>
-
-    <button style="width: 80px;">
-        <a >
-          <img src="phonenumber.png" alt="" style="width: 40px; ">
-        </a>
-        <p>(602)-788-7854</p>
-    </button>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
 
 
-    <button style="width: 80px;">
-        <a>
-          <img src="email.png" alt="" style="width: 40px; ">
-        </a>
-        <p >email@gmail.com</p>
-    </button>
-</aside>
-</article>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+      <div class="sidebar">
+
+        <button>
+          <a href="https://www.youtube.com/c/MrBeast6000">
+            <img src="images/facebookicon.png" alt="facebook">
+          </a>
+          <p class="facebook">Facebook</p>
+        </button>
+
+        <button>
+          <a href="https://www.youtube.com/c/MrBeast6000">
+            <img src="images/instagramicon.png" alt="instagram">
+          </a>
+          <p class="insta">Instagram</p>
+        </button>
+
+        <button>
+          <a href="https://www.youtube.com/c/MrBeast6000">
+            <img src="images/phonenumber.png" alt="phone">
+          </a>
+          <p>(602)-788-7854</p>
+        </button>
+
+        <button>
+          <a href="https://www.youtube.com/c/MrBeast6000">
+            <img src="images/email.png" alt="email">
+          </a>
+          <p>email@gmail.com</p>
+        </button>
+      </div>
+    </article>
+  </div>
 
   <footer>
     <p>
-        (c) Copyright 2020 by Me. All rights reserved.
+      (c) Copyright 2020 by Me. All rights reserved.
     </p>
-</footer>
+  </footer>
 
-    <script src="contact.js"></script>
+  <script src="contact.js"></script>
 </body>
+
 </html>
