@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacts</title>
   <link rel="stylesheet" href="contact.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="./contact.js"></script>
 </head>
 
 <body>
@@ -25,6 +27,7 @@
     <article>
       <div class="container">
         <form action="https://formspree.io/f/mvovwnlp" method="POST">
+
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -38,14 +41,27 @@
             <option value="australia">Australia</option>
           </select>
 
+          <label>
+            Email
+            <input type="email" name="email" class="email">
+      
+          </label>
+
+
           <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+          <textarea class="subject" id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
 
 
           <label for="message">Message</label>
-          <textarea id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>
+          <textarea class="message" id="message" name="message" placeholder="Write something.." style="height:100px"></textarea>
 
-          <input type="submit" value="Submit">
+
+          <div class="status">
+
+          </div>
+
+
+          <input type="submit" class="submit" value="Submit">
         </form>
       </div>
 
@@ -88,7 +104,7 @@
     </p>
   </footer>
 
-  <script src="contact.js"></script>
+  
 </body>
 
 </html>

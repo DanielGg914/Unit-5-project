@@ -25,10 +25,10 @@ $(document).ready(function () {
          }
 
          if(message.length >= 10){
-             statusElm.append('<div>Message is valid')
+             statusElm.append('<div>Message is valid</div>')
          } else { 
             event.preventDefault()
-            statusElm.append('<div>Message is not valid')
+            statusElm.append('<div>Message is not valid</div>')
          }
      })
 })
