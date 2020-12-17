@@ -134,7 +134,7 @@ div.page-content {
     min-height: calc(100vh - 100px);
 }
 
-@media(max-width: 480px){
+@media(max-width: 480px) {
     div.page-content {
         height: fit-content;
         min-height: calc(100vh - 85px);
@@ -142,7 +142,6 @@ div.page-content {
 }
 
 /* Body styles */
-
 
 /* Footer Layout */
 
@@ -160,13 +159,12 @@ div.page-content {
     min-height: calc(100vh - 100px);
 }
 
-@media(max-width: 480px){
+@media(max-width: 480px) {
     div.page-content {
         height: fit-content;
         min-height: calc(100vh - 85px);
     }
 }
-
 
 /* Option styles */
 
@@ -189,7 +187,7 @@ div .bottomimageblock {
 
 /* article styles */
 
-article p{
+article p {
     background-color: var(--red);
     padding: 10px;
 }

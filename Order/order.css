@@ -120,12 +120,12 @@ div.page-content {
 
 /* Option styles */
 
-main{
+main {
     display: flex;
     margin: 0 10%;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -133,31 +133,31 @@ main{
     justify-items: center;
 }
 
-.option{
+.option {
     display: flex;
     flex-direction: row;
     padding: 25px;
 }
 
-.option h3{
+.option h3 {
     font-size: 20px;
     color: var(--gold);
 }
 
-.included{
+.included {
     border-top: 5px var(--gold) solid;
     width: 100%;
 }
 
-.border1{
+.border1 {
     border-right: 3px var(--gold) solid;
 }
 
-.border2{
+.border2 {
     border-left: 3px var(--gold) solid;
 }
 
-ul{
+ul {
     padding-left: 30px;
     padding-top: 10px;
     padding-bottom: 50px;
@@ -165,25 +165,20 @@ ul{
     color: var(--gold);
 }
 
-
-@media(max-width: 480px){
-    .option h3{
+@media(max-width: 480px) {
+    .option h3 {
         font-size: 15px;
     }
-    
-    .included{
+    .included {
         border-top: 2.5px var(--gold) solid;
     }
-    
-    .border1{
+    .border1 {
         border-right: 1.5px var(--gold) solid;
     }
-    
-    .border2{
+    .border2 {
         border-left: 1.5px var(--gold) solid;
     }
-    
-    ul{
+    ul {
         padding-left: 15px;
         padding-top: 10px;
         padding-bottom: 30px;
