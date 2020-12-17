@@ -187,7 +187,6 @@ label {
     article {
         width: 90%;
     }
-    
     input[type=text], input[type=email], select, textarea {
         font-size: 10px;
     }
